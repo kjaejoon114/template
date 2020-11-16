@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#646ECB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="243dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:background="#483D8B"
+        android:gravity="center"
+        android:text="근처 부스 정보"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="195dp"
+        android:layout_height="338dp"
+        android:layout_marginBottom="236dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/intro" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Exhiby 부스"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="400dp"
+        android:layout_height="143dp"
+        android:text="
+□ 개발목적\n
+- 대학 캠퍼스 정보에 대하여 외부에서 찾기가 어려움\n
+- 대학 캠퍼스 내의 건물에 대한 정보를 외부에서도 쉽게 제공하기 위해 개발\n
+\n
+□ 작품내용\n
+- iBeacon을 이용하여 건물을 인식하고, 해당 건물에 맞는 정보를 사용자에게 제공\n
+- 외부에서도 캠퍼스에 대한 정보를 쉽게 제공함으로써, 대학 캠퍼스에 대한 접근성을 높일 수 있음\n
+\n
+□ 개발결과\n
+- Beacon 신호를 인식하여, 사용자 기준 근처 대학 건물을 인식\n
+- 인식한 신호를 웹 서버로 보내, 해당 신호에 맞는 건물 정보를 사용자에게 스마트폰\n "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:scrollbars="vertical"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="143dp"
+        android:layout_height="39dp"
+        android:text="포스터 보기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재 위치는 Exhiby 부스 입니다."
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
